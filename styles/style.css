@@ -1,0 +1,42 @@
+.row{
+    height: 400px;
+    margin-top: 5px;
+    display: flex;
+    gap: 5px;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+.second-row{
+    display: flex;
+    gap: 5px;
+}
+.row div{
+    flex: 1;
+}
+
+.two-images{
+    height: 50%;
+    
+}
+.lion{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5px;
+}
+
+@media screen and (max-width:576px){
+    .row{
+        flex-direction: column;
+        height: auto;
+    }
+    .lion{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .two-images{
+        flex-direction: column;
+        height: 100%;
+    }
+}
+    
